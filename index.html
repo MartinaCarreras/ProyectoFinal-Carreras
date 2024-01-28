@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="" class="logo">
+    </header>
+    <main>
+        <section class="dinero">
+            <div id="opciones-moneda" class="opciones-moneda position-relative none">
+                <h4 id="opcionMoneda1">$</h4>
+                <h4 id="opcionMoneda2">$USD</h4>
+                <h4 id="opcionMoneda3">€</h4>
+                <h4 id="opcionMoneda4">¥</h4>
+            </div>
+            <h2 id="dineroActualTipo">$</h2>
+            <h1 id="dineroActualTexto"></h1>
+            <button class="button button-color1"><a href="#form-ingreso">INGRESAR</a></button>
+            <button class="button button-color1"><a href="#form-retiro">RETIRAR</a></button>
+            <button class="button button-color1"><a href="#form-transferencia">TRANSFERIR</a></button>
+        </section>
+        <section>
+            <form action="" id="form-ingreso" class="forms">
+                <h1>INGRESO</h1>
+                <label for="monto-ingreso">¿Cuánto quieres ingresar? (en pesos)</label>
+                <input id="monto-ingreso" type="number" placeholder="Ingrese un monto" required>
+                <input type="submit" class="button-submit button-color2">
+                <p class="alertas none" id="alerta-ingreso"></p>
+            </form>
+        </section>
+        <section>
+            <form action="" id="form-retiro" class="forms">
+                <h1>RETIRO</h1>
+                <label for="monto-retiro">¿Cuánto quieres retirar? (en pesos)</label>
+                <input id="monto-retiro" type="number" placeholder="Ingrese un monto" required>
+                <input type="submit" class="button-submit button-color2">
+                <p class="alertas none" id="alerta-retiro"></p>
+            </form>
+        </section>
+        <section class="forms forms2" id="form-transferencia">
+            <h1>TRANSFERENCIA</h1>
+            <h3 id="opcion-cbu" class="button-color2">CBU</h3>
+            <h3 id="opcion-alias" class="button-color1">Alias</h3>
+            <form action="" id="cbu" class="form-cbu">
+                <label for="numero-cbu">Ingrese el número de CBU del destinatario</label>
+                <input id="numero-cbu" type="number" placeholder="Ingrese el número de CBU" required>
+                <label for="monto-cbu">¿Cuánto quieres transferirle a esta persona? (en pesos)</label>
+                <input id="monto-cbu" type="number" placeholder="Ingrese un monto" required>
+                <input type="submit" class="button-submit button-color2">
+            </form>
+            <form action="" id="alias" class="form-cbu none">
+                <label for="numero-alias">Ingrese el alias del destinatario</label>
+                <input id="numero-alias" type="text" placeholder="Ingrese el alias" required>
+                <label for="monto-alias">¿Cuánto quieres transferirle a esta persona? (en pesos)</label>
+                <input id="monto-alias" type="number" placeholder="Ingrese un monto" required>
+                <input type="submit" class="button-submit button-color2">
+            </form>
+            <p class="alertas none" id="alerta-transf"></p>
+        </section>
+        <img src="./images/calculadora.png" id="calculadora-logo" alt="logo calculadora" class="logo-calculadora2">
+        <aside id="calculadora" class="calculadora none">
+            <h5 class="h5-borde1 calc-opcion1">+ - X</h5>
+            <h5 class="calc-opcion2">/</h5>
+            <h5 class="calc-opcion2">x²</h5>
+            <h5 class="h5-borde2 calc-opcion2">√x</h5>
+            <form action="" id="calculadora1" class="none">
+                <input type="text" name="" id="resultado1">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="button1">=</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="button1">+</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="button1">-</button>
+                <button>0</button>
+                <button class="button1">*</button>
+            </form>
+            <form action="" id="calculadora2" class="none">
+                <input type="number" name="" id="num1D">
+                <h4>%</h4>
+                <input type="number" name="" id="num2D">
+                <input type="submit" value="=" class="submit-calc2">
+                <h4 class="resultado1">0,00</h4>
+            </form>
+            <form action="" id="calculadora3" class="none">
+                <input type="number" name="" id="num-base" class="input-c1">
+                <input type="number" name="" id="num-exp" class="input-c2">
+                <input type="submit" value="=" class="submit-calc">
+                <h4 class="resultado2">0,00</h4>
+            </form>
+            <form action="" id="calculadora4" class="none">
+                <input type="number" name="" id="numRadic">
+                <h2>√</h2>
+                <input type="number" name="" id="numIndice">
+                <input type="submit" value="=" class="submit-calc">
+                <h4 class="resultado3">0,00</h4>
+            </form>
+            <p id="alerta-calculadora" class="none"></p>
+        </aside>
+        <section class="forms historial" id="historial-section">
+            <h1>Historial</h1>
+            <div id="ubicacion-movimientos">
+            </div>
+        </section>
+        <section id="historial-section">
+
+        </section>
+    </main>
+    <footer>
+        <img src="./images/logo.png" alt="" class="logo">
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
