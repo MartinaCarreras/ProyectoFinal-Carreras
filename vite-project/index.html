@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     </header>
     <main>
         <section class="dinero">
-            <div id="opciones-moneda" class="opciones-moneda position-relative none">
+            <div id="opciones-moneda" class="opciones-moneda position-relative2 none">
                 <h4 id="opcionMoneda1">$</h4>
                 <h4 id="opcionMoneda2">$USD</h4>
                 <h4 id="opcionMoneda3">€</h4>
@@ -45,8 +45,8 @@
         </section>
         <section class="forms forms2" id="form-transferencia">
             <h1>TRANSFERENCIA</h1>
-            <h3 id="opcion-cbu" class="button-color2">CBU</h3>
-            <h3 id="opcion-alias" class="button-color1">Alias</h3>
+            <h3 id="opcion-cbu" class="button-color2 buttons">CBU</h3>
+            <h3 id="opcion-alias" class="button-color1 buttons">Alias</h3>
             <form action="" id="cbu" class="form-cbu">
                 <label for="numero-cbu">Ingrese el número de CBU del destinatario</label>
                 <input id="numero-cbu" type="number" placeholder="Ingrese el número de CBU" required>
@@ -120,6 +120,7 @@
     <footer>
         <img src="./images/logo.png" alt="" class="logo">
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script type="module" src="./js/declaraciones.js"></script>
 </body>
 </html>
